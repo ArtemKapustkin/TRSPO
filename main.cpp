@@ -12,7 +12,7 @@ void f1(int a, int b)
 
 void f2(int a, int b, int n)
 {
-	this_thread::sleep_for(chrono::seconds(n)); // затримка зроблена задля запобігання накладанню виведення функцій
+	this_thread::sleep_for(chrono::seconds(n)); // the delay is done to prevent overlapping functions outputs
 	int c = a * b;
 	cout << "Function 2 result - " << c << endl;
 }
